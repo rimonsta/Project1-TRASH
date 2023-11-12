@@ -32,16 +32,18 @@ const animalImg = document.getElementById("animalImg");
 const otherImg = document.getElementById("otherImg");
 const images = document.querySelectorAll('svg');
 
+let typed = new Typed('#typed', {
+    stringsElement: '#untyped',
+    typeSpeed: 50,
+    showCursor: false,
+    onComplete: function () {
+        document.getElementById('btn-skip').innerHTML = 'NEXT';
+    }
+});
+
 document.addEventListener("DOMContentLoaded", (event) => {
     // console.log(event);
-    let typed = new Typed('#typed', {
-        stringsElement: '#untyped',
-        typeSpeed: 50,
-        showCursor: false,
-        onComplete: function () {
-            document.getElementById('btn-skip').innerHTML = 'NEXT';
-        }
-    });
+    typed.toggle();
 });
 
 ageInput.addEventListener("input", (event) => {
@@ -122,7 +124,7 @@ obitForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event){
     event.preventDefault();
-    typed.reset();
+    typed.destroy();
 }
 
 function inputValidation(input){
