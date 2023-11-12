@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+svg {
+    display: none;
+    width: 20vw;
+    max-width: 200px;
+    margin: auto;
+    fill: white;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    padding: 0.75rem; 
+    margin: 2rem 0;
+}
+
+button {
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    width: 48%;
+    padding: 0.5rem;
+    color: white;
+    text-shadow: none;
+    display: inline-block;
+    align-items: flex-start;
+    background: black;
+    writing-mode: horizontal-tb !important;
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+    border-width: 1px;
+    border-style: outset;
+    border-color: white;
+    border-image: initial;
+}
+
+svg#reaprImg {
+    display: block;
+}
+
+fieldset, .buttons, .reapr, .reapr-btn {
+    display: none;
+}
+
+.materialImg {
+    display: none;
+}
+
+fieldset.active-step {
+    display: block;
+}
+
+p.active-step {
+    display: inline-block;
+    padding: 0.75rem; 
+    margin: 2rem 0;
+}
+
+.buttons.active-step {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem auto;
+    justify-content: space-between;
+}
+
+.reapr-btn.active-step {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0.5rem auto;
+    justify-content: space-between;}
+
+/* .reapr.active-step {
+    display: flex;
+    margin: 0.5rem auto;
+    justify-content: space-between;
+} */
+
+#intro {
+    text-align: center;
+}
+
+#first-btn {
+    flex-direction: row;
+}
+
+#formTitle {
+    text-align: center;
+} 
+
+#obit {
+    text-align: center;
+    display: none;
+}
+
+
+#obitForm, #intro {
+    display: none;
+    width: clamp(320px, 30%, 430px);
+    padding: 1.5rem;
+
+    /* The clamp() CSS function clamps a middle value within a range of values between a defined minimum bound and a maximum bound. The function takes three parameters: a minimum value, a preferred value, and a maximum allowed value. */
+} 
+
+#obitForm.active-step, #intro.active-step {
+    display: block;
+}
+
+/* #meter {
+    -webkit-transform: rotate(180deg); 
+    appearance: slider-vertical;
+} */
+
+#level-of-hell, #paperSubCategories {
+    display: none;
+}
+
+

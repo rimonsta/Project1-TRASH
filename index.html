@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="This is Project 1 for the class Web Front-End Development taught by Peter Rosenthal in the ATLAS department at CU Boulder.">
+        <title>TRASH Portal: Powered by REaPR</title>
+    </head>
+    <body>
+        <h1 id="formTitle">T.R.A.S.H. Portal</h1>
+
+        <main>
+            <div id="intro" class="active-step">
+                <svg version="1.1" id="reaprImg" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 274.989 274.989" xml:space="preserve">
+                    <g>
+                        <path d="M179.567,216.044c-5.609,11.237-8.425,16.844-14.02,19.641c-5.609,5.603-16.837,5.603-28.068,5.603
+                        c-14.02,0-22.432,0-28.038-5.603c-5.624-2.797-8.432-8.404-14.03-19.641c0,0-2.816-2.781-2.816-5.611l-11.228,2.83l8.429,28.025
+                        l16.827,14.049c5.598,14.022,16.835,19.652,30.855,19.652c5.609,0,14.039-2.836,16.835-5.63c5.623-2.816,11.232-8.415,14.04-14.022
+                        l16.826-14.049l8.425-28.025l-11.222-2.83C179.567,213.263,179.567,216.044,179.567,216.044L179.567,216.044z M210.458,25.266
+                        C190.794,8.448,168.355,0,137.48,0c-30.855,0-53.295,8.448-72.948,25.266C47.701,39.287,36.493,61.729,36.493,87.009
+                        c0,22.422,2.787,39.249,8.4,47.7c8.426,14.008,14.04,22.428,14.04,28.032l2.797,22.43l39.28,19.663l8.432,16.84
+                        c2.782,0,5.607,0,11.222,2.797c5.613,0,11.222,0,16.817,0c14.039,0,22.459-2.797,30.875-2.797l5.603-16.84l39.291-19.663
+                        l2.796-22.43c2.818-5.604,2.818-8.426,2.818-11.216c14.018-19.648,19.633-42.094,19.633-64.517
+                        C238.496,61.729,230.086,39.287,210.458,25.266L210.458,25.266z M95.412,162.742c-16.845,0-22.44-11.216-22.44-28.032
+                        c0-8.451,0-16.867,5.595-19.652c2.802-5.626,8.434-8.415,16.845-8.415c16.812,0,25.252,8.415,25.252,25.237
+                        C120.664,151.526,112.224,162.742,95.412,162.742L95.412,162.742z M145.921,193.597c-2.831,0-5.633,0-8.44-2.806
+                        c-2.817,2.806-2.817,2.806-5.595,2.806c-2.836,0-5.609,0-8.425-2.806c-2.797,0-2.797-2.791-2.797-5.618
+                        c0-2.776,2.797-8.387,5.613-11.198c5.609-5.621,8.387-11.232,11.204-16.837c2.807,5.604,8.44,11.216,11.231,16.837
+                        c5.604,2.811,5.604,8.422,5.604,11.198C154.316,190.791,151.519,193.597,145.921,193.597L145.921,193.597z M182.385,162.742
+                        c-16.837,0-25.263-11.216-25.263-28.032c0-16.867,8.426-28.068,25.263-28.068c8.409,0,14.018,2.79,16.826,8.415
+                        c5.613,2.785,5.613,8.411,5.613,16.821C204.823,151.526,196.403,162.742,182.385,162.742L182.385,162.742z"/>
+                    </g>
+                </svg>
+                
+                <div id="untyped">
+                    <p class="reapr">Hello!</p>
+                    <p class="reapr">You have reached a portal for <b>T</b>he <b>R</b>ejected <b>A</b>bandoned <b>S</b>tuff <b>H</b>ell.</p>
+                    <p class="reapr">Also known as a TRASH portal!</p>
+                    <p class="reapr">I am sorry to hear that one of your items is deceased.</p>
+                    <p class="reapr">My name is REaPR, and I'm here to guide your item through the various levels of Hell in order to manage population levels and prevent overcrowding.</p>
+                    <p class="reapr">However, before your item can enter the portal, you must tell me a little bit about it.</p>
+                    <p class="reapr">I have no soul, you see, so I cannot tell whether something is good or evil...</p>
+                    <p class="reapr">With that said, please complete the following survey to the best of your ability.</p>
+                </div>
+
+                <span id="typed"></span>
+
+                <div id="first-btn" class="buttons btn-next active-step">
+                    <button id="btn-skip">SKIP</button>
+                </div>
+                
+            </div>
+
+            <div id="obit">
+
+                <svg version="1.1" id="dinosaurImg" class="materialImg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+                    <path id="XMLID_804_" d="M140,48v2c0,5.522-4.477,10-10,10s-10-4.478-10-10v-2c0-5.522,4.477-10,10-10S140,42.478,140,48z
+                    M480,463.745v0.097c0,8.91-7.249,16.158-16.158,16.158H400c-61.051,0-119.425-17.43-170-50.59V440c0,22.056-17.944,40-40,40H90
+                    c-22.056,0-40-17.944-40-40s17.944-40,40-40h60v-46.092C126.689,322.451,109.831,287.547,99.805,250H20c-11.028,0-20-8.972-20-20
+                    c0-22.056,17.944-40,40-40h50v-70H67.398C46.777,120,30,103.224,30,82.602c0-10.932,4.76-21.281,13.06-28.396l46.081-39.497
+                    C100.206,5.224,114.327,0,128.902,0C162.592,0,190,27.408,190,61.098v47.04C201.688,96.91,217.552,90,235,90
+                    c16.542,0,30,13.458,30,30v40h25c27.57,0,50,22.43,50,50v40h10c22.056,0,40,17.944,40,40v50h20c16.542,0,30,13.458,30,30v62.44
+                    c10.094,7.533,19.806,12.905,29.055,16.012h0C475.602,450.651,480,456.797,480,463.745z M374.025,360
+                    c15.804,22.298,31.207,40.787,45.975,55.178V370c0-5.514-4.486-10-10-10H374.025z M319.122,270
+                    c13.909,25.893,27.715,49.279,41.289,70H370v-50c0-11.028-8.972-20-20-20H319.122z M265,194.868
+                    c17.272,13.925,31.534,31.448,41.644,51.279c0.658,1.291,1.314,2.572,1.972,3.853H320v-40c0-16.542-13.458-30-30-30h-25V194.868z
+                    M190,161.824c19.334,2.962,38.044,9.54,55,19.33V120c0-5.514-4.486-10-10-10c-24.813,0-45,20.187-45,45V161.824z M445.902,460
+                    c-7.102-3.863-22.411-14.958-22.938-15.48c-26.747-21.42-52.677-53.557-76.248-88.967c-0.008-0.013-0.017-0.025-0.024-0.037
+                    c-21.696-32.599-41.386-67.961-57.866-100.284c-9.487-18.607-22.742-34.43-38.626-46.689c-0.855-0.469-1.633-1.059-2.313-1.746
+                    c-19.769-14.599-43.402-23.797-68.819-26.178c-5.139-0.481-9.067-4.795-9.067-9.956V61.098C170,38.437,151.563,20,128.902,20
+                    c-9.804,0-19.303,3.514-26.746,9.894L56.076,69.392C52.214,72.701,50,77.516,50,82.602C50,92.195,57.805,100,67.398,100H100
+                    c5.523,0,10,4.478,10,10v79.668c0.201,2.99,0.458,6.05,0.786,9.341c0.033,0.329,0.049,0.658,0.049,0.986
+                    c0.001,2.471-0.913,4.868-2.587,6.716c-1.896,2.095-4.588,3.289-7.413,3.289H40c-11.028,0-20,8.972-20,20h87.585
+                    c4.624,0,8.645,3.17,9.724,7.666c9.328,38.855,26.373,74.813,50.662,106.873c1.317,1.738,2.029,3.858,2.029,6.039V410
+                    c0,5.522-4.477,10-10,10H90c-11.028,0-20,8.972-20,20s8.972,20,20,20h100c11.028,0,20-8.972,20-20v-29.802
+                    c0-3.785,2.137-7.245,5.521-8.94c1.417-0.71,2.951-1.06,4.479-1.06c2.12,0,4.226,0.673,5.988,1.99
+                    C276.582,440.009,336.755,460,400,460H445.902z"/>
+                </svg>
+
+                <svg viewBox="0 0 15 15" fill="none" id="plantImg" class="materialImg" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 15V7M7.5 7.5V10.5M7.5 7.5C7.5 5.29086 5.70914 3.5 3.5 3.5H0.5V6.5C0.5 8.70914 2.29086 10.5 4.5 10.5H7.5M7.5 7.5H10.5C12.7091 7.5 14.5 5.70914 14.5 3.5V0.5H11.5C9.29086 0.5 7.5 2.29086 7.5 4.5V7.5ZM7.5 7.5L11.5 3.5M7.5 10.5L3.5 6.5" stroke="#000000"/>
+                </svg>
+
+                <svg fill="#000000" viewBox="0 0 24 24" id="rockEarthImg" class="materialImg" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.01,14.577A3.867,3.867,0,0,0,21,12.055c0-2.09-1.862-3.9-4.652-4.649a2.636,2.636,0,0,0-.045-.985A2.82,2.82,0,0,0,18,4.011C18,2.322,16.133,1,13.75,1A4.307,4.307,0,0,0,9.735,3.047c-2.919.25-5.11,1.906-5.11,3.98a3.624,3.624,0,0,0,2,3.037A3.681,3.681,0,0,0,6,12.055c0,.076.012.151.017.227-.51.322-1,.627-1.462.859-.23.114-.446.215-.649.311C2.1,14.3,1,14.978,1,18.088,1,22.44,4.741,23,8,23a71.591,71.591,0,0,0,8.916-.376c1.5-.2,6.084-.789,6.084-3.61C23,15.991,21.416,15.15,20.01,14.577ZM13.75,3c1.924,0,3.376,1.29.979,1.9-1.717.428-3.229-.376-3.229-.892C11.5,3.654,12.354,3,13.75,3Zm-4,2.052c.765,1.52,2.909,2.11,4.622,1.939.1,1.206-2.268,2.053-3.874,2.053-1.408,0-3.875-.73-3.875-2.017C6.625,6.186,7.92,5.257,9.752,5.052Zm.748,5.992a6.825,6.825,0,0,0,4.928-1.806C17.5,9.688,19,10.846,19,12.055a2.562,2.562,0,0,1-1.48,2.012c-4.065,2.468-11.6-.257-8.992-3.252A8.534,8.534,0,0,0,10.5,11.044Zm6.159,9.6A70.429,70.429,0,0,1,8,21c-4.2,0-5-1.023-5-2.911,0-2.793.65-1.975,3.707-3.876C8.867,17.343,14.72,17.842,18.2,16c.257.115.511.215.759.314,1.361.54,2.045.811,2.045,2.7C21,19.408,20.086,20.2,16.659,20.64ZM12,19a1,1,0,0,1-1,1H8a1,1,0,0,1,0-2h3A1,1,0,0,1,12,19Z"/>
+                </svg>
+
+                <svg fill="#000000" viewBox="0 0 24 24" id="animalImg" class="materialImg" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23,4a1,1,0,0,0-1-1H17V2a1,1,0,0,0-2,0v.589a7.935,7.935,0,0,0-6,0V2A1,1,0,0,0,7,2V3H2A1,1,0,0,0,1,4,4.946,4.946,0,0,0,4.186,8.3,8.008,8.008,0,0,0,4,10v2.851C2.136,13.921,1,15.374,1,17c0,3.364,4.832,6,11,6s11-2.636,11-6c0-1.626-1.136-3.079-3-4.149V10a8.008,8.008,0,0,0-.186-1.7A4.946,4.946,0,0,0,23,4ZM4.856,6.414A3.269,3.269,0,0,1,3.294,5H5.765a8.1,8.1,0,0,0-.889,1.379C4.87,6.391,4.862,6.4,4.856,6.414ZM21,17c0,1.892-3.7,4-9,4s-9-2.108-9-4c0-.929.894-1.908,2.428-2.666l.012,0A15.4,15.4,0,0,1,12,13a15.4,15.4,0,0,1,6.56,1.33l.008,0C20.1,15.09,21,16.07,21,17Zm-9-6a19.14,19.14,0,0,0-6,.939V10a6,6,0,0,1,12,0v1.939A19.039,19.039,0,0,0,12,11Zm7.144-4.586c-.006-.011-.012-.02-.017-.03A8.173,8.173,0,0,0,18.235,5h2.47A3.261,3.261,0,0,1,19.144,6.414ZM10,17a2,2,0,1,1-2-2A2,2,0,0,1,10,17Zm8,0a2,2,0,1,1-2-2A2,2,0,0,1,18,17Z"/>
+                </svg>
+
+                <svg viewBox="0 0 76 76" id="otherImg" class="materialImg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" enable-background="new 0 0 76.00 76.00" xml:space="preserve">
+                    <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 37.2083,49.0833C 39.3945,49.0833 41.1667,50.8555 41.1667,53.0417C 41.1667,55.2278 39.3945,57 37.2083,57C 35.0222,57 33.25,55.2278 33.25,53.0417C 33.25,50.8555 35.0222,49.0833 37.2083,49.0833 Z M 38,17.4167C 44.9956,17.4167 50.6666,21.9416 50.6666,28.5C 50.6666,30.875 49.0833,34.8333 45.9167,36.4167C 42.75,38 41.1667,40.1267 41.1667,42.75L 41.1667,45.9167L 33.25,45.9167L 33.25,43.5417C 33.25,38.1571 38,34.8333 39.5833,33.25C 42.75,30.0833 42.75,29.644 42.75,28.5C 42.75,25.8767 40.6233,23.75 38,23.75C 35.3766,23.75 33.25,25.8767 33.25,28.5L 33.25,30.875L 25.3333,30.875L 25.3333,29.2917C 25.3333,22.7333 31.0044,17.4167 38,17.4167 Z "/>
+                </svg>
+
+                <h2 id="ageObit"></h2>
+                
+            </div>
+
+            <form name="obitForm" id="obitForm">
+                <svg version="1.1" id="reaprImg" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 274.989 274.989" xml:space="preserve">
+                    <g>
+                        <path d="M179.567,216.044c-5.609,11.237-8.425,16.844-14.02,19.641c-5.609,5.603-16.837,5.603-28.068,5.603
+                        c-14.02,0-22.432,0-28.038-5.603c-5.624-2.797-8.432-8.404-14.03-19.641c0,0-2.816-2.781-2.816-5.611l-11.228,2.83l8.429,28.025
+                        l16.827,14.049c5.598,14.022,16.835,19.652,30.855,19.652c5.609,0,14.039-2.836,16.835-5.63c5.623-2.816,11.232-8.415,14.04-14.022
+                        l16.826-14.049l8.425-28.025l-11.222-2.83C179.567,213.263,179.567,216.044,179.567,216.044L179.567,216.044z M210.458,25.266
+                        C190.794,8.448,168.355,0,137.48,0c-30.855,0-53.295,8.448-72.948,25.266C47.701,39.287,36.493,61.729,36.493,87.009
+                        c0,22.422,2.787,39.249,8.4,47.7c8.426,14.008,14.04,22.428,14.04,28.032l2.797,22.43l39.28,19.663l8.432,16.84
+                        c2.782,0,5.607,0,11.222,2.797c5.613,0,11.222,0,16.817,0c14.039,0,22.459-2.797,30.875-2.797l5.603-16.84l39.291-19.663
+                        l2.796-22.43c2.818-5.604,2.818-8.426,2.818-11.216c14.018-19.648,19.633-42.094,19.633-64.517
+                        C238.496,61.729,230.086,39.287,210.458,25.266L210.458,25.266z M95.412,162.742c-16.845,0-22.44-11.216-22.44-28.032
+                        c0-8.451,0-16.867,5.595-19.652c2.802-5.626,8.434-8.415,16.845-8.415c16.812,0,25.252,8.415,25.252,25.237
+                        C120.664,151.526,112.224,162.742,95.412,162.742L95.412,162.742z M145.921,193.597c-2.831,0-5.633,0-8.44-2.806
+                        c-2.817,2.806-2.817,2.806-5.595,2.806c-2.836,0-5.609,0-8.425-2.806c-2.797,0-2.797-2.791-2.797-5.618
+                        c0-2.776,2.797-8.387,5.613-11.198c5.609-5.621,8.387-11.232,11.204-16.837c2.807,5.604,8.44,11.216,11.231,16.837
+                        c5.604,2.811,5.604,8.422,5.604,11.198C154.316,190.791,151.519,193.597,145.921,193.597L145.921,193.597z M182.385,162.742
+                        c-16.837,0-25.263-11.216-25.263-28.032c0-16.867,8.426-28.068,25.263-28.068c8.409,0,14.018,2.79,16.826,8.415
+                        c5.613,2.785,5.613,8.411,5.613,16.821C204.823,151.526,196.403,162.742,182.385,162.742L182.385,162.742z"/>
+                    </g>
+                </svg>
+
+
+                <fieldset>
+                    <legend>what is its name?</legend>
+                    <div>
+                        <input type="text" id="name" name="name"/>
+                    </div>
+                </fieldset>
+
+                <div class="buttons">
+                    <button class="btn-prev">PREVIOUS</button>
+                    <button name="name" class="btn-next">NEXT</button>
+                </div>
+
+                <fieldset>
+                    <legend>is it...</legend>
+                    <div>
+                        <input type="checkbox" id="container" name="bool"/>
+                        <label for="container">a container</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="broken" name="bool"/>
+                        <label for="broken">broken</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="soiled" name="bool"/>
+                        <label for="soiled">soiled/contaminated</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="perishable" name="bool"/>
+                        <label for="perishable">perishable</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="toxic" name="bool"/>
+                        <label for="toxic">toxic</label>
+                    </div>
+                </fieldset>
+
+                <div class="buttons">
+                    <button class="btn-prev">PREVIOUS</button>
+                    <button name="bool" class="btn-next">NEXT</button>
+                </div>
+
+                <fieldset>
+                    <legend>what's it made of?</legend>
+                    <div>
+                        <input type="checkbox" id="paper" name="material" class="plant"/>
+                        <label for="paper">paper</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cardboard" name="material" class="plant"/>
+                        <label for="cardboard">cardboard</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="glass" name="material" class="mineral"/>
+                        <label for="glass">glass</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="metal" name="material" class="mineral"/>
+                        <label for="metal">metal</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rockEarth" name="material" class="mineral"/>
+                        <label for="rockEarth">ceramic/stone/clay</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="plastic" name="material" class="plastic"/>
+                        <label for="plastic">plastic</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="textileFabric" name="material" class="plastic animal plant"/>
+                        <label for="textileFabric">textile/fabric</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="foodYard" name="material" class="plant animal mineral"/>
+                        <label for="foodYard">food/yard scraps</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="other" name="material" class="plastic plant animal mineral"/>
+                        <label for="other">other</label>
+                    </div>
+                </fieldset>
+
+                <div class="buttons">
+                    <button class="btn-prev">PREVIOUS</button>
+                    <button name="material" id="submit-materials" class="btn-next">NEXT</button>
+                </div>
+
+                <fieldset>
+                    <legend>how old is it?</legend>
+                    <div>
+                        <input type="range" id="age" name="age" min="0" max="7" step="any" value="0"/>
+                        <p id="rangeValue">0</p>
+                    </div>
+                </fieldset>
+
+                <div class="buttons">
+                    <button class="btn-prev">PREVIOUS</button>
+                    <button name="age" class="btn-next">NEXT</button>
+                </div>
+                        
+                <fieldset>
+                    <legend>what color is it?</legend>
+                    <div>
+                        <input id="color" name="color" type="color"/>
+                    </div>
+                </fieldset>
+
+                <div class="buttons">
+                    <button class="btn-prev">PREVIOUS</button>
+                    <button name="color" type="submit" id="btn-submit">SUBMIT</button>
+                </div>
+
+            </form>
+
+            <!-- <label id="level-of-hell">
+                Level of Hell: <input id="meter" type="range" min="0" step="1" value="0" max="5" orient="vertical"></progress>
+            </label>
+
+            <div id="paperSubCategories">
+                <div>
+                    <input type="checkbox" id="plainPaper" name="subMaterial" class="compostable recyclable">
+                    <label for="plainPaper">plain paper</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="towelNapkin" name="subMaterial" class="compostable">
+                    <label for="towelNapkin">paper towel/napkin</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cardboardPaper" name="subMaterial" class="recyclable compostable">
+                    <label for="cardboardPaper">cardboard/paperboard</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="paperCardboard" name="subMaterial" class="recyclable compostable">
+                    <label for="paperCardboard">paperboard/cardboard</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="paperBag" name="subMaterial" class="recyclable compostable">
+                    <label for="paperBag">paper bag</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="teaBag" name="subMaterial" class="compostable">
+                    <label for="teaBag">tea bag</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="paperPlateTray" name="subMaterial" class="recyclableTree compostableTree">
+                    <label for="paperPlateTray">paper plate/tray</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="paperBowlCup" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="paperBowlCup">paper bowl/cup</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cardstock" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="cardstock">cardstock</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="constructionPaper" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="constructionPaper">construction paper</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="newspaper" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="newspaper">newspaper</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="magazineCatalog" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="magazineCatalog">magazine/catalog</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="brochurePamphlet" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="brochurePamphlet">brochure/pamphlet</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="envelope" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="envelope">envelope</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hardcoverBook" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="hardcoverBook">hardcover book</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="paperbackBook" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="paperbackBook">paperback book</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="giftwrap" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="giftwrap">giftwrap</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="receiptThermal" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="receiptThermal">receipt/thermal paper</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="stickyNote" name="subMaterial" class="compostableTree">
+                    <label for="stickyNote">sticky note</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="indexCard" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="indexCard">index card</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="photograph" name="subMaterial">
+                    <label for="photograph">photograph</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="carbonPaper" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="carbonPaper">carbon paper</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="wallpaper" name="subMaterial">
+                    <label for="wallpaper">wallpaper</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="glossyPaper" name="subMaterial">
+                    <label for="glossyPaper">glossy paper</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="craftPaper" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="craftPaper">metallic/shiny/glittery paper</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="patternPaper" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="patternPaper">patterned/print paper</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="poster" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="poster">poster</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ticket" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="ticket">ticket</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="shreddedPaper" name="subMaterial" class="compostableTree recyclableTree">
+                    <label for="shreddedPaper">shredded paper</label>
+                </div>
+            </div> -->
+
+        </main>
+    </body>
+</html>
