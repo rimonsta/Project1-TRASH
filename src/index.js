@@ -40,7 +40,6 @@ let typed = new Typed('#typed', {
         document.getElementById('btn-skip').innerHTML = 'NEXT';
     }
 });
-typed.toggle();
 
 ageInput.addEventListener("input", (event) => {
     showAge(event.target.value);
@@ -120,7 +119,7 @@ obitForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event){
     event.preventDefault();
-    typed.destroy();
+    typed.reset(); 
 }
 
 function inputValidation(input){
