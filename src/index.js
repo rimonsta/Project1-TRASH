@@ -42,11 +42,6 @@ let typed = new Typed('#typed', {
 });
 typed.toggle();
 
-document.addEventListener("DOMContentLoaded", (event) => {
-    // console.log(event);
-    typed.toggle();
-});
-
 ageInput.addEventListener("input", (event) => {
     showAge(event.target.value);
 });
