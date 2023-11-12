@@ -40,6 +40,7 @@ let typed = new Typed('#typed', {
         document.getElementById('btn-skip').innerHTML = 'NEXT';
     }
 });
+typed.toggle();
 
 document.addEventListener("DOMContentLoaded", (event) => {
     // console.log(event);
