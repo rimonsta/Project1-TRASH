@@ -98,7 +98,7 @@ function updateFormSteps() {
         obitForm.classList.add('active-step');
         intro.classList.remove('active-step');
         formSteps[formStepsNum-INTRO_STEPS].classList.add('active-step');
-        buttons[formStepsNum-INTRO_STEPS].classList.add('active-step');
+        buttons[formStepsNum].classList.add('active-step');
     }
     
 };
