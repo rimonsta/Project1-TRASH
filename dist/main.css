@@ -53,7 +53,7 @@ svg#reaprImg {
     display: block;
 }
 
-fieldset, .buttons, .reapr, .reapr-btn {
+fieldset, .buttons {
     display: none;
 }
 
@@ -65,12 +65,6 @@ fieldset.active-step {
     display: block;
 }
 
-p.active-step {
-    display: inline-block;
-    padding: 0.75rem; 
-    margin: 2rem 0;
-}
-
 .buttons.active-step {
     display: flex;
     flex-direction: row;
@@ -78,24 +72,25 @@ p.active-step {
     justify-content: space-between;
 }
 
-.reapr-btn.active-step {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 0.5rem auto;
-    justify-content: space-between;}
+#typed {
+    display: inline-block;
+    padding: 0.75rem; 
+    margin: 2rem 0;
+}
 
-/* .reapr.active-step {
-    display: flex;
-    margin: 0.5rem auto;
-    justify-content: space-between;
-} */
+#untyped {
+    display: none;
+}
 
 #intro {
+    display: none;
     text-align: center;
+    width: clamp(320px, 30%, 430px);
+    padding: 1.5rem;
 }
 
 #first-btn {
-    flex-direction: row;
+    display: block;
 }
 
 #formTitle {
@@ -108,7 +103,7 @@ p.active-step {
 }
 
 
-#obitForm, #intro {
+#obitForm {
     display: none;
     width: clamp(320px, 30%, 430px);
     padding: 1.5rem;
@@ -125,8 +120,8 @@ p.active-step {
     appearance: slider-vertical;
 } */
 
-#level-of-hell, #paperSubCategories {
+/* #level-of-hell, #paperSubCategories {
     display: none;
-}
+} */
 
 
