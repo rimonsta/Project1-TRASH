@@ -122,6 +122,7 @@ obitForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event){
     event.preventDefault();
+    typed.reset();
 }
 
 function inputValidation(input){
